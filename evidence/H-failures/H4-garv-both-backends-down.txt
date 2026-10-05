@@ -1,0 +1,22 @@
+### 2026-10-05 12:54:35 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ dig +short app.team67.test; curl -svi https://app.team67.test/api/status 2>&1 | grep -iE "SSL connection|verify|^< HTTP|^< server|x-backend"
+10.7.27.239
+* (304) (IN), TLS handshake, CERT verify (15):
+* SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+*  SSL certificate verify ok.
+< HTTP/2 502 
+< server: nginx/1.31.6
+[exit=0]
+
+### 2026-10-05 12:55:57 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ dig +short app.team67.test; curl -svi https://app.team67.test/api/status 2>&1 | grep -iE "SSL connection|verify|^< HTTP|^< server|x-backend"
+10.7.27.239
+* (304) (IN), TLS handshake, CERT verify (15):
+* SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+*  SSL certificate verify ok.
+< HTTP/2 200 
+< server: nginx/1.31.6
+< x-backend: A
+x-backend: A
+[exit=0]
+

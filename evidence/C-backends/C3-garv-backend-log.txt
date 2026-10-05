@@ -1,0 +1,46 @@
+Backend B listening on 0.0.0.0:3002
+Traceback (most recent call last):
+  File "/Users/garvverma1/cn-project/backend/server.py", line 70, in <module>
+    ThreadingHTTPServer((BIND, PORT), Handler).serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 48] Address already in use
+Backend B listening on 0.0.0.0:3002
+2026-10-05T05:52:41.800+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T05:59:00.684+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T05:59:02.856+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T05:59:03.940+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T05:59:12.312+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:09:42.696+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:10:55.386+00:00  from=10.7.27.239  "HEAD /api/status HTTP/1.1" 200 -
+2026-10-05T06:11:15.307+00:00  from=10.7.27.239  "GET /api/status' HTTP/1.1" 404 -
+2026-10-05T06:13:04.213+00:00  from=10.7.27.239  "GET /favicon.ico HTTP/1.1" 404 -
+2026-10-05T06:24:12.957+00:00  from=10.7.27.239  "HEAD /api/cached HTTP/1.1" 200 -
+2026-10-05T06:34:13.592+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:35:51.552+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:35:51.673+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:35:51.811+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T06:35:51.912+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:07:23.546+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:15:04.962+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:45.687+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:46.783+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:46.902+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:47.211+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:47.438+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:18:47.537+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:23:23.392+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:23:23.470+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:23:23.778+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:23:23.987+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+Backend B listening on 0.0.0.0:3002
+2026-10-05T07:31:28.907+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -
+2026-10-05T07:31:29.142+00:00  from=10.7.27.239  "GET /api/status HTTP/1.1" 200 -

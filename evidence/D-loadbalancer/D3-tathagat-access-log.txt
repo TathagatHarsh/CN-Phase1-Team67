@@ -1,0 +1,12 @@
+### 2026-10-05 11:29:29 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ tail -n 8 logs/nginx-access.log
+05/Oct/2026:11:26:24 +0530 10.7.27.239:53385 "GET /api/status HTTP/2.0" 200 upstream=10.7.27.215:3001 upstream_status=200
+05/Oct/2026:11:29:00 +0530 10.7.1.77:56677 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:11:29:01 +0530 10.7.1.77:56678 "GET /api/status HTTP/2.0" 200 upstream=10.7.27.215:3001 upstream_status=200
+05/Oct/2026:11:29:02 +0530 10.7.1.77:56679 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:11:29:03 +0530 10.7.1.77:56680 "GET /api/status HTTP/2.0" 200 upstream=10.7.27.215:3001 upstream_status=200
+05/Oct/2026:11:29:03 +0530 10.7.1.77:56681 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:11:29:04 +0530 10.7.1.77:56682 "GET /api/status HTTP/2.0" 200 upstream=10.7.27.215:3001 upstream_status=200
+05/Oct/2026:11:29:12 +0530 10.7.1.77:56683 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+[exit=0]
+

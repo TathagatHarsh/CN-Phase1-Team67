@@ -1,0 +1,13 @@
+[req]
+distinguished_name = dn
+prompt = no
+[dn]
+CN = app.team67.test
+O  = Team 67 CN Project
+[v3_leaf]
+basicConstraints = critical, CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+# Names only, no IPs: clients must use the domain
+subjectAltName = DNS:app.team67.test, DNS:api.team67.test
+authorityKeyIdentifier = keyid

@@ -1,0 +1,5 @@
+### 2026-10-05 12:47:56 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig +short app.team67.test; curl -s https://app.team67.test/api/status
+10.7.27.239
+{"backend": "A", "status": "ok", "time": "2026-10-05T07:17:56.822+00:00"}[exit=0]
+

@@ -1,0 +1,9 @@
+### 2026-10-05 11:40:22 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ security verify-cert -c certs/team67.crt -p ssl -s app.team67.test
+...certificate verification successful.
+---
+No extended validation result found
+Certificate Transparency (CT) status: [31mnot verified[0m
+Unable to find at least 2 signed certificate timestamps (SCTs) from approved logs
+[exit=0]
+

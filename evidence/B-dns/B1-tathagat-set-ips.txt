@@ -1,0 +1,15 @@
+### 2026-10-05 10:51:53 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ scripts/set-ips.sh 10.7.27.239 10.7.27.215 10.7.1.77
+--- dns/dnsmasq.conf
+9:listen-address=10.7.27.239    # Node 1 IP
+15:host-record=app.team67.test,10.7.27.239   # Node 1 IP (the edge)
+16:host-record=api.team67.test,10.7.27.239   # Node 1 IP (the edge)
+--- nginx/team67.conf
+28:        server 10.7.27.215:3001 max_fails=1 fail_timeout=10s;   # Backend A (Thejas)
+29:        server 10.7.1.77:3002 max_fails=1 fail_timeout=10s;   # Backend B (Garv)
+34:        listen 10.7.27.239:80;
+41:        listen 10.7.27.239:443 ssl;
+dnsmasq: syntax check OK.
+Next: sudo nginx -t -p "$PWD/" -c nginx/team67.conf   then restart dnsmasq and reload nginx
+[exit=0]
+

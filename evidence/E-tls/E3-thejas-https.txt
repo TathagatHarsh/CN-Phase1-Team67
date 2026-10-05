@@ -1,0 +1,12 @@
+### 2026-10-05 11:39:33 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ curl -si https://app.team67.test/api/status
+HTTP/2 200 
+server: nginx/1.31.6
+date: Mon, 05 Oct 2026 06:09:33 GMT
+content-type: application/json
+content-length: 73
+x-backend: A
+cache-control: no-store
+
+{"backend": "A", "status": "ok", "time": "2026-10-05T06:09:33.735+00:00"}[exit=0]
+

@@ -1,0 +1,10 @@
+### 2026-10-05 10:47:39 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ ipconfig getifaddr en0; ipconfig getoption en0 subnet_mask; route -n get default | grep -E "gateway|interface"; ifconfig en0 | grep -E "ether|inet "
+10.7.27.215
+255.255.224.0
+    gateway: 10.7.0.1
+  interface: en0
+	ether 6e:f1:6c:21:19:6a
+	inet 10.7.27.215 netmask 0xffffe000 broadcast 10.7.31.255
+[exit=0]
+

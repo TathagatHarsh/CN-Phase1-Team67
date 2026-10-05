@@ -1,0 +1,11 @@
+### 2026-10-05 11:29:42 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ O="$(brew --prefix openssl@3)/bin/openssl"; $O verify -CAfile certs/rootCA.pem certs/team67.crt; $O x509 -in certs/team67.crt -noout -subject -issuer -dates -ext subjectAltName
+certs/team67.crt: OK
+subject=CN=app.team67.test, O=Team 67 CN Project
+issuer=CN=Team67 Local Root CA, O=Team 67 CN Project
+notBefore=Oct  3 17:06:44 2026 GMT
+notAfter=Nov  4 17:06:44 2027 GMT
+X509v3 Subject Alternative Name: 
+    DNS:app.team67.test, DNS:api.team67.test
+[exit=0]
+

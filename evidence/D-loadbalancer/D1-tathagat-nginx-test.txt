@@ -1,0 +1,6 @@
+### 2026-10-05 11:23:37 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ sudo nginx -t -p "$PWD/" -c nginx/team67.conf
+nginx: the configuration file /Users/tathagatharsh/Documents/CN/cn-project/nginx/team67.conf syntax is ok
+nginx: configuration file /Users/tathagatharsh/Documents/CN/cn-project/nginx/team67.conf test is successful
+[exit=0]
+

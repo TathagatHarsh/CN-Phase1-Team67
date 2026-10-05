@@ -1,0 +1,58 @@
+### 2026-10-05 11:04:30 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ grep -E "team67|google" logs/dnsmasq.log | tail -n 25
+dnsmasq[35590]: reply play.google.com is 192.178.177.138
+dnsmasq[35590]: reply play.google.com is 192.178.177.113
+dnsmasq[35590]: query[A] accounts.google.com from 10.7.27.215
+dnsmasq[35590]: forwarded accounts.google.com to 1.1.1.1
+dnsmasq[35590]: query[HTTPS] accounts.google.com from 10.7.27.215
+dnsmasq[35590]: forwarded accounts.google.com to 1.1.1.1
+dnsmasq[35590]: reply accounts.google.com is NODATA
+dnsmasq[35590]: reply accounts.google.com is 192.178.158.84
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] api.team67.test from 10.7.27.215
+dnsmasq[35590]: config api.team67.test is 10.7.27.239
+dnsmasq[35590]: query[HTTPS] google.com from 10.7.27.215
+dnsmasq[35590]: forwarded google.com to 1.1.1.1
+dnsmasq[35590]: query[A] google.com from 10.7.27.215
+dnsmasq[35590]: forwarded google.com to 1.1.1.1
+dnsmasq[35590]: reply google.com is 142.250.29.113
+dnsmasq[35590]: reply google.com is 142.250.29.139
+dnsmasq[35590]: reply google.com is 142.250.29.100
+dnsmasq[35590]: reply google.com is 142.250.29.138
+dnsmasq[35590]: reply google.com is 142.250.29.102
+dnsmasq[35590]: reply google.com is 142.250.29.101
+dnsmasq[35590]: reply google.com is <HTTPS>
+[exit=0]
+
+### 2026-10-05 11:04:37 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ grep -E "team67\.test" logs/dnsmasq.log
+dnsmasq[35590]: using only locally-known addresses for team67.test
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.239
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.1.77
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.1.77
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.1.77
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.1.77
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] api.team67.test from 10.7.1.77
+dnsmasq[35590]: config api.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] api.team67.test from 10.7.27.215
+dnsmasq[35590]: config api.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] app.team67.test from 10.7.27.215
+dnsmasq[35590]: config app.team67.test is 10.7.27.239
+dnsmasq[35590]: query[A] api.team67.test from 10.7.27.215
+dnsmasq[35590]: config api.team67.test is 10.7.27.239
+[exit=0]
+

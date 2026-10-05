@@ -1,0 +1,16 @@
+### 2026-10-05 12:49:38 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ tail -n 5 logs/nginx-error.log; echo "--- access log (last 6)"; tail -n 6 logs/nginx-access.log
+2026/10/03 22:36:44 [emerg] 12197#0: bind() to 10.67.0.1:80 failed (49: Can't assign requested address)
+2026/10/05 11:55:00 [error] 40242#0: *51 upstream timed out (60: Operation timed out) while connecting to upstream, client: 10.7.27.215, server: app.team67.test, request: "GET / HTTP/2.0", upstream: "http://10.7.1.77:3002/", host: "app.team67.test"
+2026/10/05 12:00:41 [error] 40242#0: *56 upstream timed out (60: Operation timed out) while connecting to upstream, client: 10.7.27.215, server: app.team67.test, request: "HEAD /api/cached HTTP/2.0", upstream: "http://10.7.1.77:3002/api/cached", host: "app.team67.test"
+2026/10/05 12:04:18 [error] 40242#0: *63 upstream timed out (60: Operation timed out) while connecting to upstream, client: 10.7.27.239, server: app.team67.test, request: "GET /api/status HTTP/2.0", upstream: "http://10.7.1.77:3002/api/status", host: "app.team67.test"
+2026/10/05 12:48:46 [error] 45034#0: *99 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 10.7.1.77, server: app.team67.test, request: "GET /api/status HTTP/2.0", upstream: "http://10.7.27.215:3001/api/status", host: "app.team67.test"
+--- access log (last 6)
+05/Oct/2026:12:48:45 +0530 10.7.1.77:57162 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:12:48:46 +0530 10.7.1.77:57164 "GET /api/status HTTP/2.0" 200 upstream=10.7.27.215:3001, 10.7.1.77:3002 upstream_status=502, 200
+05/Oct/2026:12:48:46 +0530 10.7.1.77:57165 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:12:48:47 +0530 10.7.1.77:57166 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:12:48:47 +0530 10.7.1.77:57167 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+05/Oct/2026:12:48:47 +0530 10.7.1.77:57168 "GET /api/status HTTP/2.0" 200 upstream=10.7.1.77:3002 upstream_status=200
+[exit=0]
+

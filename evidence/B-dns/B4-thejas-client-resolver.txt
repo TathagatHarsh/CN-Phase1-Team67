@@ -1,0 +1,154 @@
+### 2026-10-05 10:55:49 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ sudo networksetup -setdnsservers Wi-Fi 10.7.27.239; networksetup -getdnsservers Wi-Fi; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; nslookup app.team67.test; dig +short api.team67.test
+10.7.27.239
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 41365
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; AUTHORITY SECTION:
+.			86394	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2026100401 1800 900 604800 86400
+
+;; Query time: 16 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Oct 05 10:55:59 IST 2026
+;; MSG SIZE  rcvd: 119
+
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find app.team67.test: NXDOMAIN
+
+[exit=0]
+
+### 2026-10-05 10:57:12 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ sudo networksetup -setdnsservers Wi-Fi 10.7.27.239; networksetup -getdnsservers Wi-Fi; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; nslookup app.team67.test; dig +short api.team67.test
+10.7.27.239
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 59507
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; AUTHORITY SECTION:
+.			86296	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2026100401 1800 900 604800 86400
+
+;; Query time: 11 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Oct 05 10:57:12 IST 2026
+;; MSG SIZE  rcvd: 119
+
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find app.team67.test: NXDOMAIN
+
+[exit=0]
+
+### 2026-10-05 10:57:56 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ sudo networksetup -setdnsservers Wi-Fi 10.7.27.239; networksetup -getdnsservers Wi-Fi; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; nslookup app.team67.test; dig +short api.team67.test
+10.7.27.239
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 17662
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; AUTHORITY SECTION:
+.			86392	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2026100401 1800 900 604800 86400
+
+;; Query time: 11 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Oct 05 10:57:56 IST 2026
+;; MSG SIZE  rcvd: 119
+
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find app.team67.test: NXDOMAIN
+
+[exit=0]
+
+### 2026-10-05 11:03:13 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ sudo networksetup -setdnsservers Wi-Fi 10.7.27.239; networksetup -getdnsservers Wi-Fi; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; nslookup app.team67.test; dig +short api.team67.test
+10.7.27.239
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48096
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; ANSWER SECTION:
+app.team67.test.	60	IN	A	10.7.27.239
+
+;; Query time: 83 msec
+;; SERVER: 10.7.27.239#53(10.7.27.239)
+;; WHEN: Mon Oct 05 11:03:13 IST 2026
+;; MSG SIZE  rcvd: 60
+
+Server:		10.7.27.239
+Address:	10.7.27.239#53
+
+Name:	app.team67.test
+Address: 10.7.27.239
+
+10.7.27.239
+[exit=0]
+
+### 2026-10-05 11:03:51 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ sudo networksetup -setdnsservers Wi-Fi 10.7.27.239; networksetup -getdnsservers Wi-Fi; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; nslookup app.team67.test; dig +short api.team67.test
+10.7.27.239
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30533
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; ANSWER SECTION:
+app.team67.test.	60	IN	A	10.7.27.239
+
+;; Query time: 31 msec
+;; SERVER: 10.7.27.239#53(10.7.27.239)
+;; WHEN: Mon Oct 05 11:03:51 IST 2026
+;; MSG SIZE  rcvd: 60
+
+Server:		10.7.27.239
+Address:	10.7.27.239#53
+
+Name:	app.team67.test
+Address: 10.7.27.239
+
+10.7.27.239
+[exit=0]
+

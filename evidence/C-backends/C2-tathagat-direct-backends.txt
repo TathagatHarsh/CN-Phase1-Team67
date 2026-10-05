@@ -1,0 +1,29 @@
+### 2026-10-05 11:22:41 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ curl -si --max-time 5 http://10.7.27.215:3001/; echo; curl -si --max-time 5 http://10.7.27.215:3001/api/status; echo; curl -si --max-time 5 http://10.7.1.77:3002/api/status
+HTTP/1.0 200 OK
+Server: team67-backend Python/3.9.6
+Date: Mon, 05 Oct 2026 05:52:41 GMT
+X-Backend: A
+Content-Type: application/json
+Content-Length: 101
+
+{"service": "team67 backend", "backend": "A", "host": "Ms-MacBook-Pro-2.local", "message": "running"}
+HTTP/1.0 200 OK
+Server: team67-backend Python/3.9.6
+Date: Mon, 05 Oct 2026 05:52:41 GMT
+X-Backend: A
+Cache-Control: no-store
+Content-Type: application/json
+Content-Length: 73
+
+{"backend": "A", "status": "ok", "time": "2026-10-05T05:52:41.550+00:00"}
+HTTP/1.0 200 OK
+Server: team67-backend Python/3.13.6
+Date: Mon, 05 Oct 2026 05:52:41 GMT
+X-Backend: B
+Cache-Control: no-store
+Content-Type: application/json
+Content-Length: 73
+
+{"backend": "B", "status": "ok", "time": "2026-10-05T05:52:41.798+00:00"}[exit=0]
+

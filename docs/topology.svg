@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="470" fill="#ffffff"/>
+  <text x="480" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#1f2a44">Team 67 · Private Network Service Platform · Phase 1 topology</text>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f2a44"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e7d32"/></marker>
+  </defs>
+  <!-- LAN bar -->
+  <rect x="60" y="400" width="840" height="34" rx="6" fill="#e8eef8" stroke="#6b84b3"/>
+  <text x="480" y="422" text-anchor="middle" font-size="14" fill="#1f2a44">College Wi-Fi LAN · 10.7.0.0/19 · gateway 10.7.0.1</text>
+  <line x1="170" y1="330" x2="170" y2="400" stroke="#6b84b3" stroke-width="2"/>
+  <line x1="480" y1="330" x2="480" y2="400" stroke="#6b84b3" stroke-width="2"/>
+  <line x1="790" y1="330" x2="790" y2="400" stroke="#6b84b3" stroke-width="2"/>
+  <!-- Node 2 Thejas -->
+  <rect x="50" y="200" width="240" height="130" rx="10" fill="#f3f8f1" stroke="#2e7d32" stroke-width="2"/>
+  <text x="170" y="226" text-anchor="middle" font-size="15" font-weight="bold">Node 2 · Thejas</text>
+  <text x="170" y="250" text-anchor="middle" font-size="13">Backend A · Python · TCP 3001</text>
+  <text x="170" y="270" text-anchor="middle" font-size="13">Test client #1 (browser, curl)</text>
+  <text x="170" y="292" text-anchor="middle" font-size="12" fill="#555">IP 10.7.27.215</text>
+  <text x="170" y="314" text-anchor="middle" font-size="11" fill="#777">cloud: app instance A</text>
+  <!-- Node 1 Tathagat -->
+  <rect x="350" y="70" width="260" height="150" rx="10" fill="#eef3fb" stroke="#1f2a44" stroke-width="2"/>
+  <text x="480" y="96" text-anchor="middle" font-size="15" font-weight="bold">Node 1 · Tathagat</text>
+  <text x="480" y="120" text-anchor="middle" font-size="13">dnsmasq · DNS · UDP/TCP 53</text>
+  <text x="480" y="140" text-anchor="middle" font-size="13">nginx edge · TCP 80 → 443</text>
+  <text x="480" y="160" text-anchor="middle" font-size="13">TLS termination · round-robin LB</text>
+  <text x="480" y="182" text-anchor="middle" font-size="12" fill="#555">IP 10.7.27.239</text>
+  <text x="480" y="204" text-anchor="middle" font-size="11" fill="#777">cloud: Route 53 + load balancer</text>
+  <line x1="480" y1="220" x2="480" y2="400" stroke="#6b84b3" stroke-width="2"/>
+  <!-- Node 3 Garv -->
+  <rect x="670" y="200" width="240" height="130" rx="10" fill="#f3f8f1" stroke="#2e7d32" stroke-width="2"/>
+  <text x="790" y="226" text-anchor="middle" font-size="15" font-weight="bold">Node 3 · Garv</text>
+  <text x="790" y="250" text-anchor="middle" font-size="13">Backend B · Python · TCP 3002</text>
+  <text x="790" y="270" text-anchor="middle" font-size="13">Test client #2 · Wireshark</text>
+  <text x="790" y="292" text-anchor="middle" font-size="12" fill="#555">IP 10.7.1.77</text>
+  <text x="790" y="314" text-anchor="middle" font-size="11" fill="#777">cloud: app instance B</text>
+  <!-- client -> edge -->
+  <path d="M700,200 C680,150 650,130 612,118" fill="none" stroke="#1f2a44" stroke-width="2" marker-end="url(#a)"/>
+  <text x="700" y="140" font-size="12" fill="#1f2a44">① DNS query UDP 53</text>
+  <path d="M740,200 C730,175 690,170 612,170" fill="none" stroke="#1f2a44" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+  <text x="754" y="190" font-size="12" fill="#1f2a44">② HTTPS TCP 443 (TLS)</text>
+  <!-- edge -> backends -->
+  <path d="M350,190 C300,195 260,198 240,200" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#g)"/>
+  <text x="190" y="176" font-size="12" fill="#2e7d32">③ HTTP :3001</text>
+  <path d="M610,205 C640,215 660,225 672,240" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#g)"/>
+  <text x="560" y="250" font-size="12" fill="#2e7d32">③ HTTP :3002</text>
+  <text x="480" y="458" text-anchor="middle" font-size="12" fill="#555">Client → app.team67.test → DNS (Node 1) → nginx/TLS (Node 1) → Backend A (Node 2) or Backend B (Node 3)</text>
+</svg>

@@ -1,0 +1,7 @@
+### 2026-10-05 12:40:10 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ nc -vz -G 3 10.7.27.239 443; nc -vz -G 3 10.7.27.239 8443; curl -sS https://app.team67.test:8443/api/status
+Connection to 10.7.27.239 port 443 [tcp/https] succeeded!
+nc: connectx to 10.7.27.239 port 8443 (tcp) failed: Connection refused
+curl: (7) Failed to connect to app.team67.test port 8443 after 1043 ms: Couldn't connect to server
+[exit=7]
+

@@ -1,0 +1,20 @@
+### 2026-10-05 10:48:06 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ ping -c 3 10.7.27.215; ping -c 3 10.7.1.77
+PING 10.7.27.215 (10.7.27.215): 56 data bytes
+64 bytes from 10.7.27.215: icmp_seq=0 ttl=64 time=132.284 ms
+64 bytes from 10.7.27.215: icmp_seq=1 ttl=64 time=57.369 ms
+64 bytes from 10.7.27.215: icmp_seq=2 ttl=64 time=6.991 ms
+
+--- 10.7.27.215 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.991/65.548/132.284/51.477 ms
+PING 10.7.1.77 (10.7.1.77): 56 data bytes
+64 bytes from 10.7.1.77: icmp_seq=0 ttl=64 time=59.526 ms
+64 bytes from 10.7.1.77: icmp_seq=1 ttl=64 time=194.301 ms
+64 bytes from 10.7.1.77: icmp_seq=2 ttl=64 time=195.501 ms
+
+--- 10.7.1.77 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 59.526/149.776/195.501/63.818 ms
+[exit=0]
+

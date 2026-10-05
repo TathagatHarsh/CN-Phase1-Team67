@@ -1,0 +1,6 @@
+### 2026-10-05 13:13:03 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ lsof -nP -iTCP:3002 -sTCP:LISTEN
+COMMAND   PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+Python  12592 garvverma1    3u  IPv4 0xfa69bd0f9ef4e769      0t0  TCP *:3002 (LISTEN)
+[exit=0]
+

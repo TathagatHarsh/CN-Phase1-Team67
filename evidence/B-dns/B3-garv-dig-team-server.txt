@@ -1,0 +1,50 @@
+### 2026-10-05 10:56:30 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ dig @10.7.27.239 app.team67.test
+
+; <<>> DiG 9.10.6 <<>> @10.7.27.239 app.team67.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23486
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; ANSWER SECTION:
+app.team67.test.	60	IN	A	10.7.27.239
+
+;; Query time: 54 msec
+;; SERVER: 10.7.27.239#53(10.7.27.239)
+;; WHEN: Mon Oct 05 10:56:30 IST 2026
+;; MSG SIZE  rcvd: 60
+
+[exit=0]
+
+### 2026-10-05 10:56:43 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ dig @10.7.27.239 app.team67.test
+
+; <<>> DiG 9.10.6 <<>> @10.7.27.239 app.team67.test
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47772
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; ANSWER SECTION:
+app.team67.test.	60	IN	A	10.7.27.239
+
+;; Query time: 14 msec
+;; SERVER: 10.7.27.239#53(10.7.27.239)
+;; WHEN: Mon Oct 05 10:56:43 IST 2026
+;; MSG SIZE  rcvd: 60
+
+[exit=0]
+

@@ -1,0 +1,13 @@
+### 2026-10-05 12:44:57 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig +short app.team67.test; curl -sS https://app.team67.test/api/status; echo; curl -sS https://api.team67.test/api/status
+10.7.27.239
+{"backend": "A", "status": "ok", "time": "2026-10-05T07:15:04.463+00:00"}
+{"backend": "B", "status": "ok", "time": "2026-10-05T07:15:04.962+00:00"}[exit=0]
+
+### 2026-10-05 12:59:10 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig +short app.team67.test; curl -sS https://app.team67.test/api/status; echo; curl -sS https://api.team67.test/api/status
+10.7.27.215
+curl: (7) Failed to connect to app.team67.test port 443 after 1161 ms: Couldn't connect to server
+
+{"backend": "A", "status": "ok", "time": "2026-10-05T07:29:18.406+00:00"}[exit=0]
+

@@ -1,0 +1,32 @@
+### 2026-10-05 12:37:15 IST | garvverma1@Garvs-Macbook-Pro | en0 10.7.1.77
+$ sudo networksetup -setdnsservers Wi-Fi 8.8.8.8; sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; dig app.team67.test; curl -sS https://app.team67.test/api/status; ping -c 2 10.7.27.239; curl -s --resolve app.team67.test:443:10.7.27.239 https://app.team67.test/api/status
+
+; <<>> DiG 9.10.6 <<>> app.team67.test
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 54262
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;app.team67.test.		IN	A
+
+;; AUTHORITY SECTION:
+.			86399	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2026100500 1800 900 604800 86400
+
+;; Query time: 18 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Oct 05 12:37:22 IST 2026
+;; MSG SIZE  rcvd: 119
+
+curl: (6) Could not resolve host: app.team67.test
+PING 10.7.27.239 (10.7.27.239): 56 data bytes
+64 bytes from 10.7.27.239: icmp_seq=0 ttl=64 time=9.698 ms
+64 bytes from 10.7.27.239: icmp_seq=1 ttl=64 time=6.631 ms
+
+--- 10.7.27.239 ping statistics ---
+2 packets transmitted, 2 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.631/8.165/9.698/1.533 ms
+{"backend": "B", "status": "ok", "time": "2026-10-05T07:07:23.545+00:00"}[exit=0]
+

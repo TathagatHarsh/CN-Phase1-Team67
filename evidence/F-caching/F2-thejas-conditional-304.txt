@@ -1,0 +1,12 @@
+### 2026-10-05 11:54:12 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ E=$(curl -sI https://app.team67.test/api/cached | grep -i "^etag" | cut -d" " -f2 | tr -d "\r"); echo "ETag received: $E"; curl -sI -H "If-None-Match: $E" https://app.team67.test/api/cached
+ETag received: "35cc95fbc96a6adc"
+HTTP/2 304 
+server: nginx/1.31.6
+date: Mon, 05 Oct 2026 06:24:13 GMT
+x-backend: A
+cache-control: public, max-age=60
+etag: "35cc95fbc96a6adc"
+
+[exit=0]
+

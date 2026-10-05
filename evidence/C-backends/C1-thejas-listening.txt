@@ -1,0 +1,6 @@
+### 2026-10-05 13:13:29 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ lsof -nP -iTCP:3001 -sTCP:LISTEN
+COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+Python  90471 msthejas    4u  IPv4 0xcadf00e8e8ce551b      0t0  TCP *:3001 (LISTEN)
+[exit=0]
+

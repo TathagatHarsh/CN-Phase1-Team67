@@ -1,0 +1,17 @@
+# Private keys and signing artifacts never leave Tathagat's Mac
+*.key
+*.csr
+*.srl
+.DS_Store
+__pycache__/
+logs/
+run/
+
+# Certificates are regenerated with certs/make-certs.sh; never publish keys
+*.pem
+*.crt
+
+# Internal team notes (not part of the submission)
+docs/TEAM67-GUIDE.*
+docs/SHEET-*.md
+docs/VIDEO-SCRIPT.*

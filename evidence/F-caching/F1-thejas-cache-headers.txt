@@ -1,0 +1,26 @@
+### 2026-10-05 11:53:25 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ curl -sI https://app.team67.test/api/cached
+HTTP/2 200 
+server: nginx/1.31.6
+date: Mon, 05 Oct 2026 06:23:25 GMT
+content-type: application/json
+content-length: 52
+x-backend: A
+cache-control: public, max-age=60
+etag: "35cc95fbc96a6adc"
+
+[exit=0]
+
+### 2026-10-05 12:00:39 IST | msthejas@Ms-MacBook-Pro-2 | en0 10.7.27.215
+$ curl -sI https://app.team67.test/api/cached
+HTTP/2 200 
+server: nginx/1.31.6
+date: Mon, 05 Oct 2026 06:30:41 GMT
+content-type: application/json
+content-length: 52
+x-backend: A
+cache-control: public, max-age=60
+etag: "35cc95fbc96a6adc"
+
+[exit=0]
+

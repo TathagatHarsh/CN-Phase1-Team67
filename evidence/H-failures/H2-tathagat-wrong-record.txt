@@ -1,0 +1,14 @@
+### 2026-10-05 12:40:46 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ sed -i "" -E "s/^(host-record=app\.team67\.test,)[0-9.]+/\110.7.27.215/" dns/dnsmasq.conf; grep ^host-record dns/dnsmasq.conf; /opt/homebrew/sbin/dnsmasq --test -C dns/dnsmasq.conf
+host-record=app.team67.test,10.7.27.215   # Node 1 IP (the edge)
+host-record=api.team67.test,10.7.27.239   # Node 1 IP (the edge)
+dnsmasq: syntax check OK.
+[exit=0]
+
+### 2026-10-05 12:57:08 IST | tathagatharsh@Tathagats-MacBook-Pro | en0 10.7.27.239
+$ sed -i "" -E "s/^(host-record=app\.team67\.test,)[0-9.]+/\110.7.27.215/" dns/dnsmasq.conf; grep ^host-record dns/dnsmasq.conf; /opt/homebrew/sbin/dnsmasq --test -C dns/dnsmasq.conf
+host-record=app.team67.test,10.7.27.215   # Node 1 IP (the edge)
+host-record=api.team67.test,10.7.27.239   # Node 1 IP (the edge)
+dnsmasq: syntax check OK.
+[exit=0]
+
